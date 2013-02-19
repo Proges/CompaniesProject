@@ -1,0 +1,10 @@
+c:\users\asus\documents\visual studio 2010\Projects\CompaniesProject\CompaniesProject\bin\CompaniesProject.dll
+c:\users\asus\documents\visual studio 2010\Projects\CompaniesProject\CompaniesProject\bin\CompaniesProject.pdb
+c:\users\asus\documents\visual studio 2010\Projects\CompaniesProject\CompaniesProject\obj\Debug\CompaniesProject.dll
+c:\users\asus\documents\visual studio 2010\Projects\CompaniesProject\CompaniesProject\obj\Debug\CompaniesProject.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\CompaniesProject\CompaniesProject\obj\Debug\CompaniesProject.csprojResolveAssemblyReference.cache
+D:\Workshop\Готовые проекты\CompaniesProject\CompaniesProject\bin\CompaniesProject.dll
+D:\Workshop\Готовые проекты\CompaniesProject\CompaniesProject\bin\CompaniesProject.pdb
+D:\Workshop\Готовые проекты\CompaniesProject\CompaniesProject\obj\Debug\CompaniesProject.csprojResolveAssemblyReference.cache
+D:\Workshop\Готовые проекты\CompaniesProject\CompaniesProject\obj\Debug\CompaniesProject.dll
+D:\Workshop\Готовые проекты\CompaniesProject\CompaniesProject\obj\Debug\CompaniesProject.pdb

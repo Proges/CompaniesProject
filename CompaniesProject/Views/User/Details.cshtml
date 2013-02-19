@@ -1,0 +1,51 @@
+﻿@model CompaniesProject.Models.Company
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MainMaster.cshtml";
+}
+
+<p>    
+    @Html.ActionLink("Назад", "Index")
+</p>
+<fieldset>
+   
+    <legend>Просмотр</legend>
+
+    <br />
+    <div style="font-weight:bold">Название</div>
+    <div>@Model.companiesList.Name</div>
+    <br />
+
+    <div style="font-weight:bold">Адресс</div>
+    <div>@Model.companiesList.Address</div>
+    <br />
+
+    <div style="font-weight:bold">Телефон</div>
+    <div>@Model.companiesList.Phone</div>
+    <br />
+
+    <div style="font-weight:bold">Количество сотрудников</div>
+    <div>@Model.companiesList.EmployeesNumber</div>
+    <br />
+
+    <div style="font-weight:bold">Комментарии</div>
+    <br />
+
+    <table border="1">
+    @foreach (var comment in Model.commentList)
+    {
+        <tr>
+            <td>
+                <div style="font-style:italic">@comment.Name</div>
+                <div style="font-style:italic">@comment.Date.GetDateTimeFormats().First()</div><br />
+                <div>@comment.Text</div>
+            </td>
+        </tr>
+    }
+    </table>
+</fieldset>
+ <div>
+  @Html.Partial("AddComment", Model)
+</div>
+
