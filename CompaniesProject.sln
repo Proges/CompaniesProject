@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompaniesProject", "CompaniesProject\CompaniesProject.csproj", "{683507CE-9BF9-4E27-AC89-881E1A1D39C0}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CompaniesProject.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{683507CE-9BF9-4E27-AC89-881E1A1D39C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683507CE-9BF9-4E27-AC89-881E1A1D39C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683507CE-9BF9-4E27-AC89-881E1A1D39C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683507CE-9BF9-4E27-AC89-881E1A1D39C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

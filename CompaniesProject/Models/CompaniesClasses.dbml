@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CompaniesDB" Class="CompaniesClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\CompaniesDB.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CompaniesDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CommentsTable" Member="CommentsTables">
+    <Type Name="CommentsTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="CompaniesTable_CommentsTable" Member="CompaniesTable" ThisKey="Id" OtherKey="Id" Type="CompaniesTable" IsForeignKey="true" />
+      <Association Name="UsersTable_CommentsTable" Member="UsersTable" ThisKey="Id" OtherKey="Id" Type="UsersTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CompaniesTable" Member="CompaniesTables">
+    <Type Name="CompaniesTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeesNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CompaniesTable_CommentsTable" Member="CommentsTable" ThisKey="Id" OtherKey="Id" Type="CommentsTable" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UsersTable" Member="UsersTables">
+    <Type Name="UsersTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="UsersTable_CommentsTable" Member="CommentsTable" ThisKey="Id" OtherKey="Id" Type="CommentsTable" Cardinality="One" />
+    </Type>
+  </Table>
+</Database>
